@@ -12,6 +12,7 @@
         body {
             background: rgb(204, 204, 204);
         }
+
         page {
             background: white;
             display: block;
@@ -19,11 +20,14 @@
             margin-bottom: 0.5cm;
             box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
         }
+
         page[size="A4"] {
             width: 21cm;
             height: 29.7cm;
         }
+
         @media print {
+
             body,
             page {
                 margin: 0;
@@ -72,12 +76,12 @@
 <body>
     <page size="A4">
         <section class="invo center">
-            <div class="header" style="text-align: center; padding: 15px;">
-                <div class="image" style="display: inline-block; "><img style="margin-bottom: -40px;" src="logo.PNG"
+            <div class="header" style="text-align: center; padding: 15px; margin-bottom: -30px;">
+                <div class="image" style="display: inline-block; "><img style="margin-bottom: -20px; " src="logo.PNG"
                         width="80px" height="80px"></div>
                 <div class="heading" style="display: inline-block;">
                     <h5
-                        style="color: rgb(40, 40, 117); font-size: 25px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                        style="margin-top: 0px;color: rgb(40, 40, 117); font-size: 25px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
                         Nuvatic Electrical Equipment Trading</h5>
                 </div>
             </div>
@@ -240,32 +244,41 @@
                     </tr>
                     <tr>
                         <td colspan="9">
-                            <div style="float: left;">
-                                <p style="height: 200px;">Amount Chargeable(in words)<br>
-                                    <b>UAE Dirham One Thousand Sixty Two and Sixty fils Only(AED 1,062.60)</b>
-                                    <br>VAT Amount (in words)<br>
-                                    <b>UAE Dirham Fifty and Sixty fils Only (AED 50.60)</b>
-                                <div style="width: 50px;"></div>
-                                <p><u>Declaration</u></p>
-                                <div style="width: 400px;">We declare that this invoice shows the actual price of
-                                    the<br> goods described and that all particulars are true and correct</div>
-                                </p>
+                            <div class="grid-container">
+                                <div class="grid-item item1">
+                                    <p style="height: 200px;">Amount Chargeable(in words)<br>
+                                        <b>UAE Dirham One Thousand Sixty Two and Sixty fils Only(AED 1,062.60)</b>
+                                        <br>VAT Amount (in words)<br>
+                                        <b>UAE Dirham Fifty and Sixty fils Only (AED 50.60)</b>
+                                    <div style="width: 50px;"></div>
+                                    <p><u>Declaration</u></p>
+                                    <div style="width: 400px;">We declare that this invoice shows the actual price of
+                                        the<br> goods described and that all particulars are true and correct</div>
+                                    </p>
+                                </div>
+                                <div class="grid-item item2" style="margin-left: 50px;">
+                                    <div class="grid-container"
+                                        style="margin-top: -2px; margin-right: -2px; width: 300px; border: 1px solid black;">
+                                        <div>Taxable Value</div>
+                                        <div>1012.00</div>
+                                        <div>Value Added Tax 5%</div>
+                                        <div>50.60</div>
+                                        <div style="border-top: 1px solid; border-bottom: 1px solid;"><b>Invoice
+                                                Total</b>
+                                        </div>
+                                        <div style="border-top: 1px solid; border-bottom: 1px solid;"><b>1062.60</b>
+                                        </div>
+                                    </div>
+                                    <div style="float: right;">E. & O.E</div>
+                                </div>
+                            </div>
+                            <!-- <div style="float: left;">
+                                
                             </div>
                             <div style="float: right;" style=" width: 100%;">
-                                <div class="grid-container"
-                                    style="margin-top: -2px; margin-right: -2px; width: 300px; border: 1px solid black;">
-                                    <div>Taxable Value</div>
-                                    <div>1012.00</div>
-                                    <div>Value Added Tax 5%</div>
-                                    <div>50.60</div>
-                                    <div style="border-top: 1px solid; border-bottom: 1px solid;"><b>Invoice Total</b>
-                                    </div>
-                                    <div style="border-top: 1px solid; border-bottom: 1px solid;"><b>1062.60</b></div>
-
-
-                                </div>
-                                <div style="float: right;">E. & O.E</div>
-                            </div>
+                                
+                                
+                            </div> -->
 
                         </td>
                     </tr>
