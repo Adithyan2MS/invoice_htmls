@@ -6,12 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      /* ********A4******** */
+
+      body {
+            background: rgb(204, 204, 204);
+        }
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;
+            box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+        }
+        page[size="A4"] {
+            width: 21cm;
+            height: 29.7cm;
+        }
+        @media print {
+            body,
+            page {
+                margin: 0;
+                box-shadow: 0;
+            }
+        }
+
+        /* ********A4******** */
       .safepro1{
         width: 100%;
       }
       .center {
         margin: auto;
-        width: 70%;
+        width: 95%;
       }
       .a{
         width: 100%;
@@ -34,10 +59,11 @@
         grid-template-columns: 50% 20% 30% ;
       }
       .contents{
-        font-size: large;
+        font-size: smaller;
         color: rgb(39, 39, 160);
       }
       .b{
+        margin-top: -120px;
         width: 100%;
         height: 360px;
       }
@@ -67,6 +93,7 @@
     </style>
 </head>
 <body>
+  <page size="A4">
   <section class="safepro1 center contents">
     <div class="a">
       <div class="a1">
@@ -169,7 +196,7 @@
               </table>
             </div>
             <div class="center" style="padding: 100px;">
-              <img src="logo.PNG" width="120px" height="120px">
+              <img src="logo.PNG" width="100px" height="100px">
             </div>
           </div>
         </div>
@@ -274,5 +301,6 @@
       </div>
     </div>
   </section>
+  </page>
 </body>
 </html>
