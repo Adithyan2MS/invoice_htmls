@@ -60,45 +60,6 @@
       float: right;
     }
 
-    .grid-container {
-      display: grid;
-      width: 100%;
-      height: 700px;
-    }
-
-    .grid-item {
-      width: 100%;
-      height: 150px;
-    }
-
-    .item1 {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    .item2 {
-      grid-column: 2;
-      grid-row: 1;
-      height: 100px;
-    }
-
-    .item3 {
-      margin-top: -170px;
-      grid-column: 1;
-      grid-row: 2;
-    }
-
-    .item4 {
-      margin-top: -170px;
-      grid-column: 2;
-      grid-row: 2;
-    }
-
-    .item5 {
-      margin-top: -210px;
-      grid-column: 1/span 2;
-      grid-row: 3;
-    }
 
     .brdr {
       border: 2px solid black;
@@ -106,10 +67,6 @@
       height: auto;
     }
 
-    .item2 td {
-      border-right: solid 2px rgb(7, 7, 7);
-      border-left: solid 2px rgb(10, 10, 10);
-    }
 
     .brdr2 {
       border: 2px solid black;
@@ -155,72 +112,81 @@
             <h4 style="margin: -20px;">TEL: 02 677 3688 P.O BOX NUMBER : 133189 MUSSFAH 44 ABU DHABI
           </h3>
         </div>
-        <div class="grid-container contents">
-          <div class="grid-item item1">
-            <div class="image" style="margin: auto; width: 90px;">
-              <img src="logo.PNG" width="85px" height="85px">
-            </div>
-          </div>
-          <div class="grid-item item2">
-            <div class="table1">
-              <table class="brdr " style="float: right; border-collapse: collapse; width:70%;">
-                <tr>
-                  <td>Date</td>
-                  <td>December 26, 2022</td>
-                </tr>
-                <tr>
-                  <td>Valid Until</td>
-                  <td>January 10, 2023</td>
-                </tr>
-                <tr>
-                  <td>Quote #</td>
-                  <td>EE - 465</td>
-                </tr>
-                <tr>
-                  <td>Customer ID</td>
-                  <td>EE - 949</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="grid-item item3">
-            <div class="table2 ">
-              <table class="brdr" style="border-collapse: collapse; width: 300px; height: 130px;">
-                <tr>
-                  <th class="brdr bluehead">Customer</th>
-                </tr>
-                <tr>
-                  <td>Mr.SAFIULLAH TAJ AHMED</td>
-                </tr>
-                <tr>
-                  <td>M/S:EMARAT EUROPE FACTORY</td>
-                </tr>
-                <tr>
-                  <td>ABU DHABI</td>
-                </tr>
-                <tr>
-                  <td>UAE</td>
-                </tr>
-                <tr>
-                  <td>PH: (+971) 2 5500700</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="grid-item item4">
-            <div class="table3 ">
-              <table class="brdr2" style="border-collapse: collapse; margin-right: -53px; width: 400px;">
-                <tr>
-                  <th class="brdr bluehead">Quote/Project Description</th>
-                </tr>
-                <tr>
-                  <td style="height: 112px;"></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="grid-item item5">
-            <div class="table4 ">
+        <div class="table1 contents">
+          <table style="width: 100%; border-spacing: 0px 60px;">
+            <tr>
+              <td>
+                <div class="image" style="margin: auto; width: 90px;">
+                  <img src="logo.PNG" width="85px" height="85px">
+                </div>
+              </td>
+              <td style="position: relative;">
+                <div class="table1" style="position:absolute;
+                top:0;
+                right:0; width: 50%;">
+                  <table class="brdr " style="float: right; border-collapse: collapse; width:100%;">
+                    <tr>
+                      <td style="border-right: 2px solid black;">Date</td>
+                      <td>December 26, 2022</td>
+                    </tr>
+                    <tr>
+                      <td style="border-right: 2px solid black;">Valid Until</td>
+                      <td>January 10, 2023</td>
+                    </tr>
+                    <tr>
+                      <td style="border-right: 2px solid black;">Quote #</td>
+                      <td>EE - 465</td>
+                    </tr>
+                    <tr>
+                      <td style="border-right: 2px solid black;">Customer ID</td>
+                      <td>EE - 949</td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table2 ">
+                  <table class="brdr" style="border-collapse: collapse; width: 300px; height: 130px;">
+                    <tr>
+                      <th class="brdr bluehead">Customer</th>
+                    </tr>
+                    <tr>
+                      <td>Mr.SAFIULLAH TAJ AHMED</td>
+                    </tr>
+                    <tr>
+                      <td>M/S:EMARAT EUROPE FACTORY</td>
+                    </tr>
+                    <tr>
+                      <td>ABU DHABI</td>
+                    </tr>
+                    <tr>
+                      <td>UAE</td>
+                    </tr>
+                    <tr>
+                      <td>PH: (+971) 2 5500700</td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td>
+                <div class="table3 ">
+                  <table class="brdr2" style="border-collapse: collapse; margin-right: -53px; width: 400px;">
+                    <tr>
+                      <th class="brdr bluehead">Quote/Project Description</th>
+                    </tr>
+                    <tr>
+                      <td style="height: 112px;"></td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+            <div class="table4 contents">
               <table class="brdr4" style="border-collapse: collapse">
                 <tr>
                   <th class="bluehead brdr0">SL NO.</th>
@@ -317,8 +283,6 @@
                 </tr>
               </table>
             </div>
-          </div>
-        </div>
       </div>
     </section>
   </page>
